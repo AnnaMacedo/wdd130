@@ -27,11 +27,19 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
-  margin-left: 20px; /* Adjust this value as needed */
+  margin-left: 20px; 
 }
 
 p {
   padding: 0;
+}
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
 
 aside {
@@ -59,11 +67,3 @@ footer {
 }
 
 /* Class Selectors */
-
-.box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-}
