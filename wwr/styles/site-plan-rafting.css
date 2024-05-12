@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #E47912;
-  --secondary-color: #241466;
-  --accent1-color: #396E94;
+  --secondary-color: #396E94;
+  --accent1-color: #241466;
   --accent2-color: #E7C24F;
   
   --heading-font: 'Montserrat', sans-serif;
@@ -16,7 +16,6 @@
 }
   
 body {
-  font-family: var(--paragraph-font);
   max-width: 960px;
   padding: 20px;
 }
