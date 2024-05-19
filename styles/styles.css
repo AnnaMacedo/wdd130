@@ -47,14 +47,13 @@ h1 {
 }
 
 main {
+  order: 2; /* Ensure main content appears first in the visual layout */
   margin: 1rem;
 }
 
 aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  order: 1; /* Ensure aside content appears second in the visual layout */
+  margin: 1rem;
 }
 
 aside img {
@@ -63,11 +62,9 @@ aside img {
 }
 
 aside h2 {
-  position: absolute;
-  top: 30px;
-  left: 62px;
   background-color: white;
   padding: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
 main img {
