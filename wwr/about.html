@@ -12,12 +12,14 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -31,31 +33,43 @@
                 </article>
             </div>
         </div>
-        <section>
+        <section class="history">
             <h2>History</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
-        <section>
+        <section class="adventure-awaits">
             <h2>Adventure Awaits You!</h2>
             <div class="rafting-images">
-                <img src="images/rafting-1.jpg" alt="Rafting Image 1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="images/rafting-2.jpg" alt="Rafting Image 2">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="images/rafting-3.jpg" alt="Rafting Image 3">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="images/rafting-4.jpg" alt="Rafting Image 4">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="images/rafting-5.jpg" alt="Rafting Image 5">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <figure>
+                    <img src="images/rafting-1.jpg" alt="Rafting Image 1">
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-2.jpg" alt="Rafting Image 2">
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-3.jpg" alt="Rafting Image 3">
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-4.jpg" alt="Rafting Image 4">
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting-5.jpg" alt="Rafting Image 5">
+                    <figcaption>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</figcaption>
+                </figure>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Rafting Company | Created by Your Name</p>
-        <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
-        <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 
