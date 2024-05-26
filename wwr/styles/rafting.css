@@ -1,4 +1,19 @@
-/* General Styling */
+/* Global Styles */
+:root {
+    --primary-color: #E47912;
+    --secondary-color: #396E94;
+    --accent1-color: #241466;
+    --accent2-color: #E7C24F;
+  
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #FFFFFF; 
+    --nav-link-color: #000000; 
+    --nav-hover-link-color: #396E94; 
+    --nav-hover-background-color: #E7C24F;
+}
+  
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -11,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-/* Header */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -48,76 +62,12 @@ nav a:hover {
     border-radius: 4px;
 }
 
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-/* Company Info */
-.company-info {
-    margin-bottom: 20px;
-}
-
-.map {
-    margin-top: 10px;
-}
-
-/* Team Section */
-.team {
-    margin-bottom: 20px;
-}
-
-.employee-profiles {
-    display: flex;
-    justify-content: space-around;
-}
-
-.employee-profiles figure {
-    text-align: center;
-}
-
-.employee-profiles img {
-    width: 150px;
-    border-radius: 0%;
-}
-
-/* Contact Form */
-.contact-form {
-    margin-bottom: 20px;
-}
-
-.contact-form label,
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -141,4 +91,111 @@ footer p {
 .social-icons img {
     width: 40px;
     height: auto;
+}
+
+/* Contact Page Specific Styles */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+}
+
+.company-info {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-bottom: 20px; 
+}
+
+.employee-profiles {
+    margin-bottom: 40px;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
+}
+
+.employee {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 0 1 30%; 
+}
+
+.employee img {
+    width: 150px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Media Queries para tornar o site responsivo */
+@media screen and (max-width: 768px) {
+    .employee {
+        flex: 0 1 45%;
+    }
+
+    .contact-form form {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    .employee {
+        flex: 0 1 100%;
+    }
 }
