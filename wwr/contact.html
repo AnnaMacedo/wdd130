@@ -37,18 +37,18 @@
         <h2 class="team-title">Meet Our Team</h2>
 
         <div class="employee-profiles">
-            <div class="employee">
+            <figure class="employee">
                 <img src="images/employee-1.jpg" alt="Employee 1">
                 <figcaption>Gina Smith - Rafting Guide</figcaption>
-            </div>
-            <div class="employee">
+            </figure>
+            <figure class="employee">
                 <img src="images/employee-2.jpg" alt="Employee 2">
                 <figcaption>Michael Johnson - Safety Instructor</figcaption>
-            </div>
-            <div class="employee">
+            </figure>
+            <figure class="employee">
                 <img src="images/employee-3.jpg" alt="Employee 3">
                 <figcaption>Jane Brum - Trip Coordinator</figcaption>
-            </div>
+            </figure>
         </div>
 
         <div class="contact-form">
@@ -62,6 +62,7 @@
 
                 <label for="purpose">Purpose of Message:</label>
                 <select id="purpose" name="purpose" required>
+                    <option value="" disabled selected>Select an option</option>
                     <option value="General Inquiry">General Inquiry</option>
                     <option value="Reservation Question">Reservation Question</option>
                     <option value="Website Suggestion">Website Suggestion</option>
@@ -86,7 +87,7 @@
                     </label>
                 </fieldset>
 
-                <label>
+                <label for="subscribe">
                     <input type="checkbox" name="subscribe" id="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
@@ -106,4 +107,5 @@
 </body>
 
 </html>
+
 
