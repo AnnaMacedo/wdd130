@@ -23,57 +23,53 @@
         </nav>
     </header>
     <main>
-        <section class="contact-info">
+        <div class="contact-info">
             <h1>Contact Us</h1>
-            <div class="company-info">
-                <p><strong>Address:</strong> 4545 Farroupilha Avenue, Mal. Rondon, Canoas, RS, 92020-475, Brazil</p>
-                <p><strong>Phone:</strong> +55 (51) 3031-4567</p>
-                <p><strong>Email:</strong> info@surgeseekeerrafting.com</p>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197056.18191007446!2d-51.011788562219756!3d-29.977593972500845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1716697520245!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-        <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
+            <!-- Outras informações de contato aqui -->
+        </div>
+
+        <h2 class="team-title">Meet Our Team</h2>
+
+        <div class="employee-profiles">
             <div class="employee">
-                <img src="images/employee-1.jpg" alt="Employee 1">
-                <p>John Doe - Rafting Guide</p>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>Title 1</figcaption>
             </div>
             <div class="employee">
-                <img src="images/employee-2.jpg" alt="Employee 2">
-                <p>Jane Smith - Trip Coordinator</p>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Title 2</figcaption>
             </div>
             <div class="employee">
-                <img src="images/employee-3.jpg" alt="Employee 3">
-                <p>Michael Johnson - Safety Instructor</p>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Title 3</figcaption>
             </div>
-        </section>
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
+        </div>
+
+        <!-- Formulário de contato -->
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
                 <label for="purpose">Purpose of Message:</label>
                 <select id="purpose" name="purpose">
                     <option value="General Inquiry">General Inquiry</option>
                     <option value="Reservation Question">Reservation Question</option>
                     <option value="Website Suggestion">Website Suggestion</option>
                 </select>
-                
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                
-                <button type="submit">Submit</button>
+
+                <button type="submit">Send Message</button>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Rafting Company | Created by Your Name</p>

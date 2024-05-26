@@ -170,32 +170,3 @@ footer p {
 .contact-form button:hover {
     background-color: var(--secondary-color);
 }
-
-/* Media Queries para tornar o site responsivo */
-@media screen and (max-width: 768px) {
-    .employee {
-        flex: 0 1 45%;
-    }
-
-    .contact-form form {
-        padding: 0 20px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 2rem;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    nav a {
-        padding: 0.5rem;
-    }
-
-    .employee {
-        flex: 0 1 100%;
-    }
-}
