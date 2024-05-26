@@ -25,28 +25,34 @@
     <main>
         <div class="contact-info">
             <h1>Contact Us</h1>
-            <!-- Outras informações de contato aqui -->
+            <div class="company-info">
+                <p><strong>Address:</strong> 4545 Farroupilha Avenue, Mal. Rondon, Canoas, RS, 92020-475, Brazil</p>
+                <p><strong>Phone:</strong> +55 (51) 3031-4567</p>
+                <p><strong>Email:</strong> info@surgeseekeerrafting.com</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197056.18191007446!2d-51.011788562219756!3d-29.977593972500845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1716697520245!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <h2 class="team-title">Meet Our Team</h2>
 
         <div class="employee-profiles">
             <div class="employee">
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <figcaption>Title 1</figcaption>
+                <img src="images/employee-1.jpg" alt="Employee 1">
+                <figcaption>Gina Smith - Rafting Guide</figcaption>
             </div>
             <div class="employee">
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <figcaption>Title 2</figcaption>
+                <img src="images/employee-2.jpg" alt="Employee 2">
+                <figcaption>Michael Johnson - Safety Instructor</figcaption>
             </div>
             <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <figcaption>Title 3</figcaption>
+                <img src="images/employee-3.jpg" alt="Employee 3">
+                <figcaption>Jane Brum - Trip Coordinator</figcaption>
             </div>
         </div>
 
-        <!-- Formulário de contato -->
         <div class="contact-form">
+            <h2>Send Us a Message</h2>
             <form action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
@@ -64,8 +70,10 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
 
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                <label>
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
 
                 <button type="submit">Send Message</button>
             </form>
