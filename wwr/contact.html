@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,6 +70,22 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
+                <fieldset>
+                    <legend>Contact Preference:</legend>
+                    <label for="contact-email">
+                        <input type="radio" id="contact-email" name="contact-preference" value="Email" required>
+                        Email
+                    </label>
+                    <label for="contact-phone">
+                        <input type="radio" id="contact-phone" name="contact-preference" value="Phone">
+                        Phone
+                    </label>
+                    <label for="contact-none">
+                        <input type="radio" id="contact-none" name="contact-preference" value="No Preference">
+                        No Preference
+                    </label>
+                </fieldset>
+
                 <label>
                     <input type="checkbox" name="subscribe" id="subscribe">
                     Please subscribe me to the monthly newsletter
@@ -87,8 +102,8 @@
             <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
             <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
         </div>
-        <a href="wireframe.html">Wireframe Link</a> <!-- Link to wireframe in footer -->
     </footer>
 </body>
 
 </html>
+
