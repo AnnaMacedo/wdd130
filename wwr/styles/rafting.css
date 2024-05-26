@@ -1,44 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-    --primary-color: #E47912;
-    --secondary-color: #396E94;
-    --accent1-color: #241466;
-    --accent2-color: #E7C24F;
-  
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
-  
-    --nav-background-color: #FFFFFF; 
-    --nav-link-color: #000000; 
-    --nav-hover-link-color: #396E94; 
-    --nav-hover-background-color: #E7C24F;
-}
-  
+/* General Styling */
 body {
-  font-family: var(--paragraph-font);
-  max-width: 960px;
-  padding: 20px;
-  margin: 0 auto;
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
 }
-  
-h1 {
-	font-size: 2rem;
-	font-family: var(--heading-font);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-  
+/* Header */
 header {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	align-items: center;
-	padding: 1rem 0;
-	border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .logo {
@@ -69,88 +48,76 @@ nav a:hover {
     border-radius: 4px;
 }
 
+/* Main Content */
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-.hero-content {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-    width: 95%;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
+/* Company Info */
+.company-info {
     margin-bottom: 20px;
 }
 
-.hero-content article {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 20px;
+.map {
+    margin-top: 10px;
 }
 
-.hero-content article img {
-    float: right;
-    width: 180px;
-    margin-left: 10px;
+/* Team Section */
+.team {
+    margin-bottom: 20px;
 }
 
-section.history {
+.employee-profiles {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: var(--secondary-color);
-    color: #fff;
-    border-radius: 10px;
 }
 
-section.history p {
-    max-width: 45%;
+.employee-profiles figure {
+    text-align: center;
 }
 
-section.adventure-awaits {
-    margin-top: 40px;
+.employee-profiles img {
+    width: 150px;
+    border-radius: 0%;
 }
 
-.rafting-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.rafting-images figure {
-    width: 30%;
+/* Contact Form */
+.contact-form {
     margin-bottom: 20px;
 }
 
-.rafting-images img {
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
     width: 100%;
-    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.rafting-images figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+.contact-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
