@@ -1,5 +1,3 @@
-/* Class Selectors */
-
 :root {
     --primary-color: #E47912;
     --secondary-color: #396E94;
@@ -496,4 +494,13 @@ footer p {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
