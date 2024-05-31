@@ -318,7 +318,7 @@ footer p {
     background-size: 10px 10px;
 }
 
-/* Responsividade */
+/* Responsiveness */
 @media (max-width: 768px) {
     .employee {
         flex: 1 1 100%;
@@ -498,9 +498,9 @@ footer p {
 
 /* Class Selectors */
 .box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
