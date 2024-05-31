@@ -1,4 +1,5 @@
 /* Class Selectors */
+
 :root {
     --primary-color: #E47912;
     --secondary-color: #396E94;
@@ -495,23 +496,4 @@ footer p {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
-
-.box {
-    /* Estilos para a classe .box */
-}
-
-main img {
-    /* Estilos para as imagens dentro do elemento <main> */
-    float: right;
-}
-
-aside {
-    /* Estilos para o elemento <aside> */
-    position: relative;
-}
-
-aside h2 {
-    /* Estilos para os elementos <h2> dentro de <aside> */
-    position: absolute;
 }
